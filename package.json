@@ -1,0 +1,22 @@
+{
+  "name": "soil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umidjon098/Soil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umidjon098/Soil/issues"
+  },
+  "homepage": "https://github.com/Umidjon098/Soil#readme",
+  "dependencies": {
+    "build-js": "^1.0.0"
+  }
+}
