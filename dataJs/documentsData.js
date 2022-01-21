@@ -57,3 +57,4 @@ function getDocumentsData() {
     newsBox.innerHTML = newsItem;
   });
 }
+getDocumentsData()

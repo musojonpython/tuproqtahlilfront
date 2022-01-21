@@ -25,29 +25,26 @@ function getAboutData() {
             <div class="col-md-8">
               <div class="custom-module p40l">
                 <h2 id="aboutTitle" class="title">
-                ${
-                  lang === "uzb"
-                    ? " Biz haqimizda"
-                    : lang === "eng"
-                    ? "About us"
-                    : "О Нас"
-                }
+                ${lang === "uzb"
+            ? " Biz haqimizda"
+            : lang === "eng"
+              ? "About us"
+              : "О Нас"
+          }
                 </h2>
-                <p class="text">${
-                  lang === "uzb"
-                    ? data.text_uz.slice(0, 1000)
-                    : lang === "eng"
-                    ? data.text_en.slice(0, 1000)
-                    : data.text_ru.slice(0, 1000)
-                } ....</p>
+                <p class="text">${lang === "uzb"
+            ? data.text_uz.slice(0, 1000)
+            : lang === "eng"
+              ? data.text_en.slice(0, 1000)
+              : data.text_ru.slice(0, 1000)
+          } ....</p>
                 <div class="btn-wrapper title">
-                  <a href="about-us.html" >${
-                    lang === "uzb"
-                      ? "Ko'proq o'qish"
-                      : lang === "eng"
-                      ? "See more"
-                      : "Узнать больше"
-                  }</a>
+                  <a href="about-us.html" >${lang === "uzb"
+            ? "Ko'proq o'qish"
+            : lang === "eng"
+              ? "See more"
+              : "Узнать больше"
+          }</a>
                 </div>               
               </div>
             </div>
@@ -139,30 +136,27 @@ function getServiceData() {
                                       alt=${img === undefined ? "" : img.name}
                                />
                           <h4>
-                          ${
-                            lang === "uz"
-                              ? data.name_uz
-                              : lang === "eng"
-                              ? data.name_en
-                              : data.name_ru
-                          }
+                          ${lang === "uz"
+              ? data.name_uz
+              : lang === "eng"
+                ? data.name_en
+                : data.name_ru
+            }
                           </h4>
                           <p>
-                          ${
-                            lang === "uz"
-                              ? data.about_uz.slice(0, 120) + "..."
-                              : lang === "eng"
-                              ? data.about_en.slice(0, 120) + "..."
-                              : data.about_ru.slice(0, 120) + "..."
-                          }
+                          ${lang === "uz"
+              ? data.about_uz.slice(0, 120) + "..."
+              : lang === "eng"
+                ? data.about_en.slice(0, 120) + "..."
+                : data.about_ru.slice(0, 120) + "..."
+            }
                           </p>
-                          <a href="#" class="readmore">${
-                            lang === "uzb"
-                              ? "Ko'proq o'qish"
-                              : lang === "eng"
-                              ? "See more"
-                              : "Узнать больше"
-                          }</a>
+                          <a href="#" class="readmore">${lang === "uzb"
+              ? "Ko'proq o'qish"
+              : lang === "eng"
+                ? "See more"
+                : "Узнать больше"
+            }</a>
                         </div>
                     </div> 
                    `;
@@ -176,3 +170,5 @@ function getServiceData() {
     serviceBox.innerHTML = service;
   });
 }
+
+

@@ -21,19 +21,19 @@ function getServiceData() {
                       </div>
                       <div class="course-details ">
                       <h4 data-id=${data.id}>
-                          <a href="service-detail.html" title="" class="setID">${
-                            lang === "uz"
+                          <a href="service-detail.html" title="" class="setID">
+                            ${lang === "uz"
                               ? data.name_uz
                               : lang === "eng"
-                              ? data.name_en
-                              : data.name_ru
-                          }</a>
+                                ? data.name_en
+                                : data.name_ru
+                            }
+                          </a>
                       </h4>
                       <p>
-                        ${
-                          lang === "uz"
-                            ? data.about_uz.slice(0, 120) + "..."
-                            : lang === "eng"
+                        ${lang === "uz"
+                          ? data.about_uz.slice(0, 120) + "..."
+                          : lang === "eng"
                             ? data.about_en.slice(0, 120) + "..."
                             : data.about_ru.slice(0, 120) + "..."
                         }
@@ -87,17 +87,16 @@ function getTeamData() {
                   </div>
                 </div>
                 <div class="teamdesc">
-                  <h4> ${
-                    lang === "uz"
-                      ? data.full_name_uz
-                      : lang === "eng"
+                  <h4> ${lang === "uz"
+                    ? data.full_name_uz
+                    : lang === "eng"
                       ? data.full_name_en
                       : data.full_name_ru
-                  }</h4>
-                  <p> ${
-                    lang === "uz"
-                      ? data.about_uz.slice(0, 120) + "..."
-                      : lang === "eng"
+                  }
+                  </h4>
+                  <p> ${lang === "uz"
+                    ? data.about_uz.slice(0, 120) + "..."
+                    : lang === "eng"
                       ? data.about_en.slice(0, 120) + "..."
                       : data.about_ru.slice(0, 120) + "..."
                   }</p>

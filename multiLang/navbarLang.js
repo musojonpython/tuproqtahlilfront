@@ -22,11 +22,13 @@ const languages = {
   uz: {
     about: "Biz Haqimizda",
     document: "Dokument",
-    service: "Hizmatlar",
+    service: "Xizmatlar",
     media: "Mediya",
     labaratory: "Labaratoriya",
     news: "Yangiliklar",
     address: "Bog'lanish",
+    opendata: "Ochiq ma'lumotlar",
+    byudjet: "Byudjet mablag‘larini rejalashtirilishi va sarflanishi"
   },
   en: {
     about: "About",
@@ -36,6 +38,8 @@ const languages = {
     labaratory: "Labaratory",
     news: "News",
     address: "Address",
+    opendata: "Open data",
+    byudjet: "Budget planning and spending"
   },
   ru: {
     about: "О нас",
@@ -45,6 +49,8 @@ const languages = {
     labaratory: "Лаборатория",
     news: "Новости",
     address: "Контакт",
+    opendata: "Oткрытые данные",
+    byudjet: "Планирование бюджета и расходы"
   },
 };
 
@@ -55,6 +61,8 @@ const med = document.getElementById("med");
 const lab = document.getElementById("lab");
 const news = document.getElementById("new");
 const add = document.getElementById("add");
+const ope = document.getElementById("ope");
+const byu = document.getElementById("byu");
 
 const language = localStorage.getItem("language");
 if (language === "eng") {
@@ -65,6 +73,8 @@ if (language === "eng") {
   lab.innerText = `${languages.en.labaratory}`;
   news.innerText = `${languages.en.news}`;
   add.innerText = `${languages.en.address}`;
+  ope.innerText = `${languages.en.opendata}`;
+  byu.innerText = `${languages.en.byudjet}`;
 } else if (language === "rus") {
   about.innerText = `${languages.ru.about}`;
   doc.innerText = `${languages.ru.document}`;
@@ -73,6 +83,8 @@ if (language === "eng") {
   lab.innerText = `${languages.ru.labaratory}`;
   news.innerText = `${languages.ru.news}`;
   add.innerText = `${languages.ru.address}`;
+  ope.innerText = `${languages.ru.opendata}`;
+  byu.innerText = `${languages.ru.byudjet}`;
 } else if (language === "uzb") {
   about.innerText = `${languages.uz.about}`;
   doc.innerText = `${languages.uz.document}`;
@@ -81,4 +93,6 @@ if (language === "eng") {
   lab.innerText = `${languages.uz.labaratory}`;
   news.innerText = `${languages.uz.news}`;
   add.innerText = `${languages.uz.address}`;
+  ope.innerText = `${languages.uz.opendata}`;
+  byu.innerText = `${languages.uz.byudjet}`;
 }
