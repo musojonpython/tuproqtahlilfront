@@ -2995,6 +2995,7 @@ img {
   background-size: cover;
   text-align: center;
   padding-top: 150px;
+  padding-bottom: 50px;
 }
 
 .open-container{
@@ -3044,6 +3045,7 @@ img {
 
 .open-data-content {
   padding: 0 5px;
+  padding-bottom: 20px;
 }
 
 .open-data-content .title {
@@ -3063,11 +3065,15 @@ th {
   text-align: left;
   padding: 10px 15px 10px 20px;
   font-size: 14px;
-  color: #808080;
+  color: #808080 ;
 }
 
 .open-data-table td:hover{
-  background-color: #86C232;
+  background-color: #00305B;
+  color: #fff;
+}
+
+.open-data-table td:hover th{
   color: #fff;
 }
 
@@ -3111,10 +3117,11 @@ th {
   min-height: 68px;
   display: flex;
   align-items: center;
+  color: #000000;
 }
 
 .chart-1-ul li a:hover {
-  background-color: #86C232;
+  background-color: #00305B;
   color: #fff;
 }
 
@@ -3137,5 +3144,5 @@ th {
 }
 
 .col-2-chart2{
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }

@@ -44,15 +44,15 @@ window.onload = function () {
       shared: true
     },
     legend: {
-      cursor:"pointer",
+      cursor: "pointer",
       itemclick: toggleDataSeries
     },
     data: [{
       type: "column",
       name: "Proven Oil Reserves (bn)",
       legendText: "Proven Oil Reserves",
-      showInLegend: false, 
-      dataPoints:[
+      showInLegend: false,
+      dataPoints: [
         { label: "Saudi", y: 266.21 },
         { label: "Venezuela", y: 302.25 },
         { label: "Iran", y: 157.20 },
@@ -62,12 +62,12 @@ window.onload = function () {
       ]
     },
     {
-      type: "column",	
+      type: "column",
       name: "Oil Production (million/day)",
       // legendText: "Oil Production",
       axisYType: "secondary",
       showInLegend: false,
-      dataPoints:[
+      dataPoints: [
         { label: "Saudi", y: 2.46 },
         { label: "Venezuela", y: 2.27 },
         { label: "Iran", y: 3.99 },
@@ -78,9 +78,9 @@ window.onload = function () {
     }]
   });
   chart.render();
-  
+
   function toggleDataSeries(e) {
-    if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
       e.dataSeries.visible = false;
     }
     else {
@@ -88,23 +88,23 @@ window.onload = function () {
     }
     chart.render();
   }
-  
+
 
   var chart = new CanvasJS.Chart("chartContainer2", {
-    animationEnabled: true,	
+    animationEnabled: true,
     toolTip: {
       shared: true
     },
     legend: {
-      cursor:"pointer",
+      cursor: "pointer",
       itemclick: toggleDataSeries
     },
     data: [{
       type: "column",
       name: "Proven Oil Reserves (bn)",
       // legendText: "Proven Oil Reserves",
-      showInLegend: false, 
-      dataPoints:[
+      showInLegend: false,
+      dataPoints: [
         { label: "Saudi", y: 266.21 },
         { label: "Venezuela", y: 302.25 },
         { label: "Iran", y: 157.20 },
@@ -114,12 +114,12 @@ window.onload = function () {
       ]
     },
     {
-      type: "column",	
+      type: "column",
       name: "Oil Production (million/day)",
       // legendText: "Oil Production",
       axisYType: "secondary",
       showInLegend: false,
-      dataPoints:[
+      dataPoints: [
         { label: "Saudi", y: 10.46 },
         { label: "Venezuela", y: 2.27 },
         { label: "Iran", y: 3.99 },
@@ -130,9 +130,9 @@ window.onload = function () {
     }]
   });
   chart.render();
-  
+
   function toggleDataSeries(e) {
-    if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
       e.dataSeries.visible = false;
     }
     else {
@@ -141,4 +141,259 @@ window.onload = function () {
     chart.render();
   }
 
+  // Accordion 1
+
+  var chart = new CanvasJS.Chart("chartContainer3", {
+    toolTip: {
+      shared: true
+    },
+    legend: {
+      cursor: "pointer",
+      itemclick: toggleDataSeries
+    },
+    data: [{
+      type: "line",
+      name: "Footfall",
+      color: "#369EAD",
+      showInLegend: true,
+      axisYIndex: 1,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 85.4 },
+        { x: new Date(2017, 00, 14), y: 92.7 },
+        { x: new Date(2017, 00, 21), y: 64.9 },
+        { x: new Date(2017, 00, 28), y: 58.0 },
+        { x: new Date(2017, 01, 4), y: 63.4 },
+        { x: new Date(2017, 01, 11), y: 69.9 },
+        { x: new Date(2017, 01, 18), y: 88.9 },
+        { x: new Date(2017, 01, 25), y: 66.3 },
+        { x: new Date(2017, 02, 4), y: 82.7 },
+        { x: new Date(2017, 02, 11), y: 60.2 },
+        { x: new Date(2017, 02, 18), y: 87.3 },
+        { x: new Date(2017, 02, 25), y: 98.5 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Order",
+      color: "#C24642",
+      axisYIndex: 0,
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 32.3 },
+        { x: new Date(2017, 00, 14), y: 33.9 },
+        { x: new Date(2017, 00, 21), y: 26.0 },
+        { x: new Date(2017, 00, 28), y: 15.8 },
+        { x: new Date(2017, 01, 4), y: 18.6 },
+        { x: new Date(2017, 01, 11), y: 34.6 },
+        { x: new Date(2017, 01, 18), y: 37.7 },
+        { x: new Date(2017, 01, 25), y: 24.7 },
+        { x: new Date(2017, 02, 4), y: 35.9 },
+        { x: new Date(2017, 02, 11), y: 12.8 },
+        { x: new Date(2017, 02, 18), y: 38.1 },
+        { x: new Date(2017, 02, 25), y: 42.4 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Revenue",
+      color: "#7F6084",
+      axisYType: "secondary",
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 42.5 },
+        { x: new Date(2017, 00, 14), y: 44.3 },
+        { x: new Date(2017, 00, 21), y: 28.7 },
+        { x: new Date(2017, 00, 28), y: 22.5 },
+        { x: new Date(2017, 01, 4), y: 25.6 },
+        { x: new Date(2017, 01, 11), y: 45.7 },
+        { x: new Date(2017, 01, 18), y: 54.6 },
+        { x: new Date(2017, 01, 25), y: 32.0 },
+        { x: new Date(2017, 02, 4), y: 43.9 },
+        { x: new Date(2017, 02, 11), y: 26.4 },
+        { x: new Date(2017, 02, 18), y: 40.3 },
+        { x: new Date(2017, 02, 25), y: 54.2 }
+      ]
+    }]
+  });
+  chart.render();
+
+  function toggleDataSeries(e) {
+    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+      e.dataSeries.visible = false;
+    } else {
+      e.dataSeries.visible = true;
+    }
+    e.chart.render();
   }
+
+  // Accordion 2
+
+  var chart = new CanvasJS.Chart("chartContainer4", {
+    toolTip: {
+      shared: true
+    },
+    legend: {
+      cursor: "pointer",
+      itemclick: toggleDataSeries
+    },
+    data: [{
+      type: "line",
+      name: "Footfall",
+      color: "#369EAD",
+      showInLegend: true,
+      axisYIndex: 1,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 85.4 },
+        { x: new Date(2017, 00, 14), y: 92.7 },
+        { x: new Date(2017, 00, 21), y: 64.9 },
+        { x: new Date(2017, 00, 28), y: 58.0 },
+        { x: new Date(2017, 01, 4), y: 63.4 },
+        { x: new Date(2017, 01, 11), y: 69.9 },
+        { x: new Date(2017, 01, 18), y: 88.9 },
+        { x: new Date(2017, 01, 25), y: 66.3 },
+        { x: new Date(2017, 02, 4), y: 82.7 },
+        { x: new Date(2017, 02, 11), y: 60.2 },
+        { x: new Date(2017, 02, 18), y: 87.3 },
+        { x: new Date(2017, 02, 25), y: 98.5 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Order",
+      color: "#C24642",
+      axisYIndex: 0,
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 32.3 },
+        { x: new Date(2017, 00, 14), y: 33.9 },
+        { x: new Date(2017, 00, 21), y: 26.0 },
+        { x: new Date(2017, 00, 28), y: 15.8 },
+        { x: new Date(2017, 01, 4), y: 18.6 },
+        { x: new Date(2017, 01, 11), y: 34.6 },
+        { x: new Date(2017, 01, 18), y: 37.7 },
+        { x: new Date(2017, 01, 25), y: 24.7 },
+        { x: new Date(2017, 02, 4), y: 35.9 },
+        { x: new Date(2017, 02, 11), y: 12.8 },
+        { x: new Date(2017, 02, 18), y: 38.1 },
+        { x: new Date(2017, 02, 25), y: 42.4 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Revenue",
+      color: "#7F6084",
+      axisYType: "secondary",
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 42.5 },
+        { x: new Date(2017, 00, 14), y: 44.3 },
+        { x: new Date(2017, 00, 21), y: 28.7 },
+        { x: new Date(2017, 00, 28), y: 22.5 },
+        { x: new Date(2017, 01, 4), y: 25.6 },
+        { x: new Date(2017, 01, 11), y: 45.7 },
+        { x: new Date(2017, 01, 18), y: 54.6 },
+        { x: new Date(2017, 01, 25), y: 32.0 },
+        { x: new Date(2017, 02, 4), y: 43.9 },
+        { x: new Date(2017, 02, 11), y: 26.4 },
+        { x: new Date(2017, 02, 18), y: 40.3 },
+        { x: new Date(2017, 02, 25), y: 54.2 }
+      ]
+    }]
+  });
+  chart.render();
+
+  function toggleDataSeries(e) {
+    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+      e.dataSeries.visible = false;
+    } else {
+      e.dataSeries.visible = true;
+    }
+    e.chart.render();
+  }
+
+  // Accordion 3
+
+  var chart = new CanvasJS.Chart("chartContainer5", {
+    toolTip: {
+      shared: true
+    },
+    legend: {
+      cursor: "pointer",
+      itemclick: toggleDataSeries
+    },
+    data: [{
+      type: "line",
+      name: "Footfall",
+      color: "#369EAD",
+      showInLegend: true,
+      axisYIndex: 1,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 85.4 },
+        { x: new Date(2017, 00, 14), y: 92.7 },
+        { x: new Date(2017, 00, 21), y: 64.9 },
+        { x: new Date(2017, 00, 28), y: 58.0 },
+        { x: new Date(2017, 01, 4), y: 63.4 },
+        { x: new Date(2017, 01, 11), y: 69.9 },
+        { x: new Date(2017, 01, 18), y: 88.9 },
+        { x: new Date(2017, 01, 25), y: 66.3 },
+        { x: new Date(2017, 02, 4), y: 82.7 },
+        { x: new Date(2017, 02, 11), y: 60.2 },
+        { x: new Date(2017, 02, 18), y: 87.3 },
+        { x: new Date(2017, 02, 25), y: 98.5 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Order",
+      color: "#C24642",
+      axisYIndex: 0,
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 32.3 },
+        { x: new Date(2017, 00, 14), y: 33.9 },
+        { x: new Date(2017, 00, 21), y: 26.0 },
+        { x: new Date(2017, 00, 28), y: 15.8 },
+        { x: new Date(2017, 01, 4), y: 18.6 },
+        { x: new Date(2017, 01, 11), y: 34.6 },
+        { x: new Date(2017, 01, 18), y: 37.7 },
+        { x: new Date(2017, 01, 25), y: 24.7 },
+        { x: new Date(2017, 02, 4), y: 35.9 },
+        { x: new Date(2017, 02, 11), y: 12.8 },
+        { x: new Date(2017, 02, 18), y: 38.1 },
+        { x: new Date(2017, 02, 25), y: 42.4 }
+      ]
+    },
+    {
+      type: "line",
+      name: "Revenue",
+      color: "#7F6084",
+      axisYType: "secondary",
+      showInLegend: true,
+      dataPoints: [
+        { x: new Date(2017, 00, 7), y: 42.5 },
+        { x: new Date(2017, 00, 14), y: 44.3 },
+        { x: new Date(2017, 00, 21), y: 28.7 },
+        { x: new Date(2017, 00, 28), y: 22.5 },
+        { x: new Date(2017, 01, 4), y: 25.6 },
+        { x: new Date(2017, 01, 11), y: 45.7 },
+        { x: new Date(2017, 01, 18), y: 54.6 },
+        { x: new Date(2017, 01, 25), y: 32.0 },
+        { x: new Date(2017, 02, 4), y: 43.9 },
+        { x: new Date(2017, 02, 11), y: 26.4 },
+        { x: new Date(2017, 02, 18), y: 40.3 },
+        { x: new Date(2017, 02, 25), y: 54.2 }
+      ]
+    }]
+  });
+  chart.render();
+
+  function toggleDataSeries(e) {
+    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+      e.dataSeries.visible = false;
+    } else {
+      e.dataSeries.visible = true;
+    }
+    e.chart.render();
+  }
+
+}

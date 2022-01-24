@@ -344,9 +344,9 @@ section .title::after {
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 10px;
   transition: all 0.5s ease;
-  width: 350px;
+  /* width: 350px; */
 }
 
 .teams .carousel .teams-card img {
@@ -373,7 +373,8 @@ section .title::after {
 }
 
 .teams .carousel .teams-card:hover {
-  background: rgba(15, 15, 15, 0.15);
+  /* background: rgba(15, 15, 15, 0.15); */
+  background-color: #00305B;
 }
 
 .teams .carousel .teams-card:hover .staff-box {
@@ -526,7 +527,7 @@ footer span i {
 @media (max-width: 767px) {
   header {
     background-size: cover;
-    height: 90vh;
+    /* height: 90vh; */
     /* background: url(../images/galareya/white/10.8.png) right; */
     background-size: cover;
     background-attachment: fixed;
@@ -582,7 +583,7 @@ footer span i {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
-    height: 80vh;
+    /* height: 80vh; */
   }
   .header-text h1 {
     font-size: 90px;
