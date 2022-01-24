@@ -1838,6 +1838,13 @@ BLOG
   align-items: center;
   font-size: 50px;
   font-weight: 900;
+  position: relative;
+  z-index: 3;
+}
+
+.count-body{
+  position: relative;
+  z-index: 3;
 }
 
 .count-body h3,
