@@ -3153,3 +3153,12 @@ th {
 .col-2-chart2{
   margin-bottom: 0px;
 }
+
+@media (max-width: 992px) {
+  .chart-bottom{
+    margin-top: 420px;
+  }
+  .chart-bottom2{
+    margin-top: 20px;
+  }
+}
