@@ -52,7 +52,14 @@ function filterMenu() {
     let content = response.data.results
       .map((data) => {
         return `
-       <li data-target=${data.title}>${data.title}</li>
+       <li data-target=${data.title}>
+          ${lang === "eng"
+            ? data.title_en
+            : lang === "rus"
+              ? data.title_ru
+              : data.title_uz
+          }
+       </li>
       `;
       })
       .join("");

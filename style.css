@@ -538,7 +538,7 @@ MEGA MENU
   position: relative;
 }
 
-.yamm .dropdown.yamm-fw .dropdown-menu {}
+/* .yamm .dropdown.yamm-fw .dropdown-menu {} */
 
 .yamm .dropdown {
   position: relative;
@@ -2432,7 +2432,7 @@ a:focus,
 .box i,
 .topbar .text-left i {
   color: #34a853;
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 
 .shop-extra .nav-tabs>li:hover a,
