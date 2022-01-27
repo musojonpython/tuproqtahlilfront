@@ -231,8 +231,8 @@ a {
 }
 
 .col-md-4 {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .authorbox,
@@ -1328,12 +1328,13 @@ SECTIONS
   margin-bottom: 20px;
 }
 
-.m30 {
+#serviceBox{
+  position: relative;
   margin-top: -60px;
-  width: 98%;
-  height: 100%;
-  /* margin-bottom: 30px; */
+  background-color: white !important;
+  z-index: 3;
 }
+
 
 .gallery-box {
   width: 100%;

@@ -146,7 +146,7 @@ if (til === "eng") {
   quantityText.innerText = data.ru.quantityText;
   clientsTitle.innerText = data.ru.clientsTitle;
   clientsText.innerText = data.ru.clientsText;
-  alertTitle.innerText = data.ru.alertTitle;
+  alertTitle.innerText = data.ru.alertTitle; ////
   msg.innerText = data.ru.msg;
   subscribe.innerText = data.ru.subscribe;
 } else if (til === "uzb") {

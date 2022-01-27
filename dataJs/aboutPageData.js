@@ -129,7 +129,7 @@ function getServiceData() {
         count++;
         if (data) {
           return `
-                  <div class="col-md-4 service-card">
+                  <div class="col-sm-6 col-md-4 service-card">
                       <div class="box m30">
                             <img class="img-responsive img-rounded"
                                       src=${img === undefined ? "" : img.file}
