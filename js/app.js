@@ -9,7 +9,7 @@ $(document).ready(function () {
   // sr.reveal(".title");
 
   window.addEventListener("scroll", function () {
-    if (this.scrollY > 2800) {
+    if (this.scrollY > 2200) {
       $(".counter").each(function () {
         var $this = $(this),
           countTo = $this.attr("data-count");

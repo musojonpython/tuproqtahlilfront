@@ -32,12 +32,14 @@ function getAboutData() {
               : "О Нас"
           }
                 </h2>
-                <p class="text">${lang === "uzb"
+                <p class="text">
+                  ${lang === "uzb"
             ? data.text_uz.slice(0, 1000)
             : lang === "eng"
               ? data.text_en.slice(0, 1000)
               : data.text_ru.slice(0, 1000)
-          } ....</p>
+          } ....
+          </p>
                 <div class="btn-wrapper title">
                   <a href="about-us.html" >${lang === "uzb"
             ? "Ko'proq o'qish"
