@@ -26,6 +26,7 @@ const data = {
     alertTitle: "Eslatma: ",
     subscribe: "Azo Bo'lish",
     msg: "Telegram kanalimizga azo bo'ling!",
+    tahlilTitle: "Tahlil turlari"
   },
   en: {
     homeText: "SOIL COMPOSITION AND REPOSITORY, QUALITY ANALYSIS CENTER",
@@ -54,6 +55,7 @@ const data = {
     alertTitle: "Alert",
     subscribe: "Subscribe",
     msg: "Subscribe to our Telegram channel!",
+    tahlilTitle: "Types of analysis"
   },
   ru: {
     homeText: "СОСТАВ ПОЧВЫ, ЦЕНТР АНАЛИЗА КАЧЕСТВА",
@@ -80,10 +82,11 @@ const data = {
     clientsTitle: "Количество клиентов",
     clientsText:
       "Quisque porttitor eros quis leo pulvinar, at hendrerit sapien",
+    alertTitle: "Примечание",
+    subscribe: "подписать",
+    msg: "Подписывайтесь на наш Telegram канал!",
+    tahlilTitle: "Виды анализа",
   },
-  alertTitle: "Примечание",
-  subscribe: "подписать",
-  msg: "Подписывайтесь на наш Telegram канал!",
 };
 
 let homeText = document.getElementById("homeText");
@@ -107,6 +110,7 @@ let clientsText = document.getElementById("clientsText");
 let alertTitle = document.getElementById("alert-title");
 let msg = document.getElementById("msg");
 let subscribe = document.getElementById("subscribe");
+let tahlil = document.getElementById("tahlil-title");
 
 const til = localStorage.getItem("language");
 if (til === "eng") {
@@ -129,6 +133,7 @@ if (til === "eng") {
   alertTitle.innerText = data.en.alertTitle;
   msg.innerText = data.en.msg;
   subscribe.innerText = data.en.subscribe;
+  tahlil.innerText = data.en.tahlilTitle;
 } else if (til === "rus") {
   homeText.innerText = data.ru.homeText;
   ruleText.innerText = data.ru.ruleText;
@@ -146,9 +151,10 @@ if (til === "eng") {
   quantityText.innerText = data.ru.quantityText;
   clientsTitle.innerText = data.ru.clientsTitle;
   clientsText.innerText = data.ru.clientsText;
-  alertTitle.innerText = data.ru.alertTitle; ////
+  alertTitle.innerText = data.ru.alertTitle;
   msg.innerText = data.ru.msg;
   subscribe.innerText = data.ru.subscribe;
+  tahlil.innerText = data.ru.tahlilTitle;
 } else if (til === "uzb") {
   homeText.innerText = data.uz.homeText;
   ruleText.innerText = data.uz.ruleText;
@@ -169,4 +175,5 @@ if (til === "eng") {
   alertTitle.innerText = data.uz.alertTitle;
   msg.innerText = data.uz.msg;
   subscribe.innerText = data.uz.subscribe;
+  tahlil.innerHTML = data.uz.tahlilTitle;
 }

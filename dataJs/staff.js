@@ -64,3 +64,20 @@ function staffPage() {
 }
 
 staffPage();
+
+const teamTitle = document.querySelector("#teams-title");
+teamTitle.innerHTML = `${lang === "uzb"
+  ? "Mening jamoam"
+  : lang === "eng"
+    ? "My Teams"
+    : "Моя команда"
+  }`
+
+  
+const staffTitle = document.querySelector("#staff-title");
+staffTitle.innerHTML = `${lang === "uzb"
+  ? "Hodimlar"
+  : lang === "eng"
+    ? "Staff"
+    : "Штат сотрудников"
+  }`

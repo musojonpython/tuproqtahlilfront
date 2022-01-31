@@ -174,3 +174,12 @@ function getServiceData() {
 }
 
 
+// const lang = window.localStorage.getItem("language");
+const tahlilTitle = document.querySelector("#tahlil-title");
+tahlilTitle.innerHTML = `${lang === "uzb"
+  ? "Tahlil turlari"
+  : lang === "eng"
+    ? "Types of analysis"
+    : "Виды анализа"
+  }`
+
