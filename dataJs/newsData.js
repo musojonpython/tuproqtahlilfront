@@ -55,7 +55,7 @@ async function getNewsData(search) {
                     <div class="blog-desc-big">
                       <p class="lead">
                         ${
-                          lang === "uz"
+                          lang === "uzb"
                             ? data.title_uz
                             : lang === "eng"
                             ? data.title_en
@@ -64,14 +64,22 @@ async function getNewsData(search) {
                       </p>
                       <p>
                       ${
-                        lang === "uz"
+                        lang === "uzb"
                           ? data.short_description_uz
                           : lang === "eng"
                           ? data.short_description_en
                           : data.short_description_ru
                       }
                       </p>
-                      <a href="news-detail.html" class="btn btn-primary setID">Read More</a> 
+                      <a href="news-detail.html" class="btn btn-primary setID">
+                      ${
+                        lang === "uzb"
+                          ? "Ko'proq o'qish"
+                          : lang === "eng"
+                          ? "Read more"
+                          : "Читать далее"
+                      }
+                      </a> 
                     </div>
                   </div>
                 `;

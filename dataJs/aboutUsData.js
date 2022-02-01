@@ -74,7 +74,7 @@ function filterItem() {
     let content = response.data.results
       .map((data) => {
         return `
-        <li data-item="Title1"><img src=${data.image.file} alt=""></li>
+        <li data-item="Title1"><img src=${data.image.file} alt="image"></li>
       `;
       })
       .join("");

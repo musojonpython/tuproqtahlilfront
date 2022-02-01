@@ -970,7 +970,7 @@ CONTACT
 .contact-card:hover h4,
 a {
     transition: all 0.5s ease-in-out;
-    color: #fff;
+    color: #000000;
 }
 
 .contact-card a:hover {
