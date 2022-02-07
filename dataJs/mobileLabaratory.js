@@ -16,7 +16,7 @@ function getMobileLaboratory() {
                       <div class="image-wrap entry">
                           <img
                               src=${img === undefined ? "" : img.file}
-                              alt=""
+                              alt="image"
                               class="img-responsive"
                           />
                           <div class="magnifier setID">
