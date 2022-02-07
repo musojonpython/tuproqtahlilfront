@@ -10,7 +10,7 @@ function getServiceDetail() {
                     <div class="news-item">
                           <div class="title">
                           ${
-                            lang === "uz"
+                            lang === "uzb"
                               ? response.data.name_uz
                               : lang === "eng"
                               ? response.data.name_en
@@ -34,7 +34,7 @@ function getServiceDetail() {
                           </div>
                           <div class="description">
                                   ${
-                                    lang === "uz"
+                                    lang === "uzb"
                                       ? response.data.about_uz
                                       : lang === "eng"
                                       ? response.data.about_en

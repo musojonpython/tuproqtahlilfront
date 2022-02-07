@@ -1,69 +1,65 @@
-// import { baseUrl } from "./baseUrl.js";
+import { baseUrl } from "./baseUrl.js";
 // const lang = localStorage.getItem("language");
-const team = [
-    {
-        id: 1,
-        fullName: "Cristiano Ronaldo",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?",
-        job: "FrontEnd developer",
-        img: "images/team/2.png"
-    },
-    {
-        id: 2,
-        fullName: "Alexia Hermoso",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?",
-        job: "FrontEnd developer",
-        img: "images/team/1.png"
-    },
-    {
-        id: 3,
-        fullName: "Aliyeva Bahora",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?",
-        job: "FrontEnd developer",
-        img: "images/team/3.png"
-    },
-    {
-        id: 4,
-        fullName: "Jon Doe",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?",
-        job: "FrontEnd developer",
-        img: "images/team/1.png"
-    },
-    {
-        id: 5,
-        fullName: "Selena Gomes",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?",
-        job: "FrontEnd developer",
-        img: "images/team/2.png"
-    },
-]
-const teamStaff = document.querySelector('#team-staff');
-function staffPage() {
-    // axios(`${baseUrl}/api/v1/main/history/`).then((response) => {
-        // const teamSta = response.data;
-        const card = team.map((data) => {
-            return`
-                <div class="col-md-4 carousel">
-                    <div class="teams-card m-2">
-                        <div class="staff-box">
-                            <img width='100%' src=${data.img} alt="" />
-                            <div class="card-body p-2 text-center>
-                                <h3 class="text">${data.fullName}</h3>
-                                <p>
-                                ${data.desc}
-                                </p>
-                                <h5>${data.job}</h5>
-                            </div>
+
+// staffPage();
+
+function getTeamDataa() {
+  axios(`${baseUrl}/v1/main/employee/`).then((response) => {
+
+    let teamBox = document.getElementById("team-staff");
+    console.log(response);
+    let team = response.data.results
+      .map((data) => {
+        return `
+           <div class="col-md-4 col-sm-6">
+                <div class="teammembers">
+                  <div class="entry">
+                    <img
+                      src=${data.image.file}
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="magnifier">
+                      <div class="visible-buttons1 teambuttons">
+                        <p>
+                          We’re committed to work and play our client meeting room
+                          transforms into a table tennis
+                        </p>
+                        <div class="social-links">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-dribbble"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-skype"></i></a>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="teamdesc">
+                    <h4> ${lang === "uzb"
+            ? data.full_name_uz
+            : lang === "eng"
+              ? data.full_name_en
+              : data.full_name_ru
+          }
+                    </h4>
+                    <p> ${lang === "uzb"
+            ? data.about_uz.slice(0, 120) + "..."
+            : lang === "eng"
+              ? data.about_en.slice(0, 120) + "..."
+              : data.about_ru.slice(0, 120) + "..."
+          }</p>
+                  </div>
                 </div>
-            `
-        }).join("")
-    // }
-    teamStaff.innerHTML = card;
+              </div>
+                     `;
+      })
+      .join("");
+
+      teamBox.innerHTML = team;
+    });
 }
 
-staffPage();
+getTeamDataa();
 
 const teamTitle = document.querySelector("#teams-title");
 teamTitle.innerHTML = `${lang === "uzb"
@@ -73,7 +69,7 @@ teamTitle.innerHTML = `${lang === "uzb"
     : "Моя команда"
   }`
 
-  
+
 const staffTitle = document.querySelector("#staff-title");
 staffTitle.innerHTML = `${lang === "uzb"
   ? "Hodimlar"

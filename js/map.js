@@ -6,8 +6,8 @@
   var locations = [
     [
       '<div class="infobox"><h3 class="title"><a href="#">OUR USA OFFICE</a></h3><span>NEW YORK CITY 2045 / 65</span><span>+90 555 666 77 88</span></div>',
-      41.311153,
-      69.279729,
+      41.283320,
+      69.208860,
       2,
     ],
   ];
@@ -98,7 +98,7 @@
         ],
       },
     ],
-    center: new google.maps.LatLng(41.311153, 69.279729),
+    center: new google.maps.LatLng(41.283320, 69.208860),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
   });
   var infowindow = new google.maps.InfoWindow();

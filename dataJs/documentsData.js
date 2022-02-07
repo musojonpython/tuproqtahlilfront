@@ -30,7 +30,7 @@ function getDocumentsData() {
                     <div class="blog-desc-big">
                       <p class="lead">
                         ${
-                          lang === "uz"
+                          lang === "uzb"
                             ? data.title_uz
                             : lang === "eng"
                             ? data.title_en
@@ -39,7 +39,7 @@ function getDocumentsData() {
                       </p>
                       <p>
                       ${
-                        lang === "uz"
+                        lang === "uzb"
                           ? data.short_description_uz
                           : lang === "eng"
                           ? data.short_description_en

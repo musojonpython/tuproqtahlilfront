@@ -22,7 +22,7 @@ function getDocuments() {
                 <div class="course-details">
                   <h4>
                     <a href="#" title=""> ${
-                      lang === "uz"
+                      lang === "uzb"
                         ? data.name_uz
                         : lang === "eng"
                         ? data.name_en

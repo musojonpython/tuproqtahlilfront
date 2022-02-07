@@ -25,7 +25,7 @@ function getDetailLaboratory() {
               </div>
               <div class="title">
                           ${
-                            lang === "uz"
+                            lang === "uzb"
                               ? response.data.name_uz
                               : lang === "eng"
                               ? response.data.name_en
@@ -34,7 +34,7 @@ function getDetailLaboratory() {
                           </div>
                 <div class="text-content">
                     ${
-                      lang === "uz"
+                      lang === "uzb"
                         ? response.data.body_uz
                         : lang === "eng"
                         ? response.data.body_en

@@ -26,7 +26,7 @@ function getMobileLaboratory() {
                       <div class="course-details ">
                       <h4 data-id=${data.id}>
                           <a href="mobile-detail.html" title="" class="setID">${
-                            lang === "uz"
+                            lang === "uzb"
                               ? data.name_uz
                               : lang === "eng"
                               ? data.name_en

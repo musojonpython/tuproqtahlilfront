@@ -26,7 +26,7 @@ function getStaticLaboratory() {
                       <div class="course-details ">
                       <h4 data-id=${data.id}>
                           <a href="static-detail.html" title="" class="setID">${
-                            lang === "uz"
+                            lang === "uzb"
                               ? data.name_uz
                               : lang === "eng"
                               ? data.name_en
@@ -35,7 +35,7 @@ function getStaticLaboratory() {
                       </h4>
                       <p>
                         ${
-                          lang === "uz"
+                          lang === "uzb"
                             ? data.body_uz.slice(0, 120) + "..."
                             : lang === "eng"
                             ? data.body_en.slice(0, 120) + "..."

@@ -138,7 +138,7 @@ function getServiceData() {
                                       alt=${img === undefined ? "" : img.name}
                                />
                           <h4>
-                          ${lang === "uz"
+                          ${lang === "uzb"
               ? data.name_uz
               : lang === "eng"
                 ? data.name_en
@@ -146,7 +146,7 @@ function getServiceData() {
             }
                           </h4>
                           <p>
-                          ${lang === "uz"
+                          ${lang === "uzb"
               ? data.about_uz.slice(0, 120) + "..."
               : lang === "eng"
                 ? data.about_en.slice(0, 120) + "..."

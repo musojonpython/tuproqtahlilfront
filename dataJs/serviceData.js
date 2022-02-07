@@ -7,7 +7,7 @@ function getServiceData() {
       .map((data) => {
         let img = data.images[0];
         return `
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
                   <div  class="course-box">
                       <div class="image-wrap entry">
                           <img
@@ -22,21 +22,21 @@ function getServiceData() {
                       <div class="course-details ">
                       <h4 data-id=${data.id}>
                           <a href="service-detail.html" title="" class="setID">
-                            ${lang === "uz"
-                              ? data.name_uz
-                              : lang === "eng"
-                                ? data.name_en
-                                : data.name_ru
-                            }
+                            ${lang === "uzb"
+            ? data.name_uz
+            : lang === "eng"
+              ? data.name_en
+              : data.name_ru
+          }
                           </a>
                       </h4>
                       <p>
-                        ${lang === "uz"
-                          ? data.about_uz.slice(0, 120) + "..."
-                          : lang === "eng"
-                            ? data.about_en.slice(0, 120) + "..."
-                            : data.about_ru.slice(0, 120) + "..."
-                        }
+                        ${lang === "uzb"
+            ? data.about_uz.slice(0, 120) + "..."
+            : lang === "eng"
+              ? data.about_en.slice(0, 120) + "..."
+              : data.about_ru.slice(0, 120) + "..."
+          }
                       </p>
                       </div>
                   </div>
@@ -62,44 +62,45 @@ function getTeamData() {
     let teamBox = document.getElementById("team");
     let team = response.data.results
       .map((data) => {
+        let image = data.image.file;
         return `
-         <div class="col-md-4 col-sm-6">
+         <div class=" col-sm-6 col-md-4">
               <div class="teammembers">
                 <div class="entry">
                   <img
-                    src="./images/img/team1.jpg"
+                    src=${image}
                     alt=""
                     class="img-responsive"
                   />
                   <div class="magnifier">
                     <div class="visible-buttons1 teambuttons">
                       <p>
-                        We’re committed to work and play our client meeting room
-                        transforms into a table tennis
+                        <p style="margin: 0px; padding: 0px;">Murojat uchun: ${data.phone_number}</p>
+                        <p style="margin: 0px; padding: 0px;">Qabul kunlari:  ${data.time_to_apply}</p>
                       </p>
                       <div class="social-links">
                         <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-telegram"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-skype"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="teamdesc">
-                  <h4> ${lang === "uz"
-                    ? data.full_name_uz
-                    : lang === "eng"
-                      ? data.full_name_en
-                      : data.full_name_ru
-                  }
+                  <h4> ${lang === "uzb"
+            ? data.full_name_uz
+            : lang === "eng"
+              ? data.full_name_en
+              : data.full_name_ru
+          }
                   </h4>
-                  <p> ${lang === "uz"
-                    ? data.about_uz.slice(0, 120) + "..."
-                    : lang === "eng"
-                      ? data.about_en.slice(0, 120) + "..."
-                      : data.about_ru.slice(0, 120) + "..."
-                  }</p>
+                  <p> ${lang === "uzb"
+            ? data.about_uz.slice(0, 120) + "..."
+            : lang === "eng"
+              ? data.about_en.slice(0, 120) + "..."
+              : data.about_ru.slice(0, 120) + "..."
+          }</p>
                 </div>
               </div>
             </div>
@@ -110,3 +111,11 @@ function getTeamData() {
   });
 }
 getTeamData();
+
+const leaderTitle = document.querySelector("#leader-title");
+leaderTitle.innerHTML = `${lang === "uzb"
+  ? "Rahbariyat"
+  : lang === "eng"
+    ? "Leadership"
+    : "Руководство"
+  }`
