@@ -123,3 +123,19 @@ leaderTitle.innerHTML = `${lang === "uzb"
     ? "Leadership"
     : "Руководство"
   }`
+
+  const eventTitle = document.querySelector("#eventTitle");
+  eventTitle.innerHTML = `${lang === "uzb"
+  ? "Biz sizga eng yaxshi va sifatli xizmatlarni taklif etamiz!"
+  : lang === "eng"
+    ? "We offer the best and quality services"
+    : "Mы предлагаем лучшие и качественные услуги"
+  }`
+
+  const offer = document.querySelector("#offer");
+  offer.innerHTML = `${lang === "uzb"
+  ? "Xizmat buyurtma qilish"
+  : lang === "eng"
+    ? "Order service"
+    : "Заказать услугу"
+  }`

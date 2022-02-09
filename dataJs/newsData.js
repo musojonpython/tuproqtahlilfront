@@ -109,3 +109,37 @@ function Search(e) {
   e.preventDefault();
   getNewsData(searchInput.value);
 }
+
+// yangiliklar
+
+let newsTitle = document.querySelector('#newsTitle');
+newsTitle.innerHTML = `${lang === "uzb"
+? "YANGILIKLAR"
+: lang === "eng"
+  ? "NEWS"
+  : "Новости"
+}`
+
+let newsTitle2 = document.querySelector('#newsTitle2');
+newsTitle2.innerHTML = `${lang === "uzb"
+? "YANGILIKLAR"
+: lang === "eng"
+  ? "NEWS"
+  : "Новости"
+}`
+
+let lastnews = document.querySelector('#lastnews');
+lastnews.innerHTML = `${lang === "uzb"
+? "So'ngi yangiliklar"
+: lang === "eng"
+  ? "Latest news"
+  : "Последние новости"
+}`
+
+let moreRead = document.querySelector('#moreRead');
+moreRead.innerHTML = `${lang === "uzb"
+? "Eng ko'p o'qilgan"
+: lang === "eng"
+  ? "most read"
+  : "Популярное"
+}`

@@ -186,3 +186,35 @@ tahlilTitle.innerHTML = `${lang === "uzb"
     : "Виды анализа"
   }`
 
+  const tuproqh1 = document.querySelector('#tuproq');
+  tuproqh1.innerHTML = `${lang === "uzb"
+  ? "Tuproq"
+  : lang === "eng"
+    ? "Soil"
+    : "Почва"
+  }`
+
+  const suvh1 = document.querySelector('#suv');
+  suvh1.innerHTML = `${lang === "uzb"
+  ? "Suv"
+  : lang === "eng"
+    ? "Water"
+    : "Вода"
+  }`
+  
+  const osimlikh1 = document.querySelector('#osimlik');
+  osimlikh1.innerHTML = `${lang === "uzb"
+  ? "O'simlik"
+  : lang === "eng"
+    ? "Plant"
+    : "Pастение"
+  }`
+
+  const serviceRule1 = document.querySelector('#serviceRule');
+  serviceRule1.innerHTML = `${lang === "uzb"
+  ? "BIZ SIZGA ENG YAXSHI VA SIFATLI XIZMATLARNI TAKLIF ETAMIZ!"
+  : lang === "eng"
+    ? "We offer the best and quality services!"
+    : "Mы предлагаем лучшие и качественные услуги!"
+  }`
+

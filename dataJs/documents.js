@@ -38,3 +38,12 @@ function getDocuments() {
     documentBox.innerHTML = docItem;
   });
 }
+
+
+let moreRead = document.querySelector('#moreRead');
+moreRead.innerHTML = `${lang === "uzb"
+? "Eng ko'p o'qilgan"
+: lang === "eng"
+  ? "most read"
+  : "Популярное"
+}`

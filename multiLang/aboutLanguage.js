@@ -26,7 +26,12 @@ const data = {
     alertTitle: "Eslatma: ",
     subscribe: "Azo Bo'lish",
     msg: "Telegram kanalimizga azo bo'ling!",
-    tahlilTitle: "Tahlil turlari"
+    tahlilTitle: "Tahlil turlari",
+    // taskTitle: "Korxonaning asosiy vazifalari",
+    // task1: 'O‘zbekiston Respublikasi viloyatlari, tumanlari va hududlari tuproq xaritalarini tuzish',
+    // task2: "Sho`rlangan tuproqlar xaritalarini tuzish",
+    // task3: "Sug'oriladigan va sug'orilmaydigan yerlarning tuproq sifatini baholash xaritalari",
+    // task4: "Sug'oriladigan yerlarning agrokimyoviy kartogrammalarini ishlab chiqish"
   },
   en: {
     homeText: "SOIL COMPOSITION AND REPOSITORY, QUALITY ANALYSIS CENTER",
@@ -55,7 +60,12 @@ const data = {
     alertTitle: "Alert",
     subscribe: "Subscribe",
     msg: "Subscribe to our Telegram channel!",
-    tahlilTitle: "Types of analysis"
+    tahlilTitle: "Types of analysis",
+    // taskTitle: "The main functions of the enterprise",
+    // task1: 'Drawing up soil maps of regions, districts and regions territory of the Republic of Uzbekistan',
+    // task2: "Sho`rlangan tuproqlar xaritalarini tuzish",
+    // task3: "Sug'oriladigan va sug'orilmaydigan yerlarning tuproq sifatini baholash xaritalari",
+    // task4: "Sug'oriladigan yerlarning agrokimyoviy kartogrammalarini ishlab chiqish"
   },
   ru: {
     homeText: "Аналитический центр качества, состава и репозитории почв",
@@ -86,6 +96,11 @@ const data = {
     subscribe: "подписать",
     msg: "Подписывайтесь на наш Telegram канал!",
     tahlilTitle: "Виды анализа",
+    // taskTitle: "Oсновные функции предприятия",
+    // task1: 'Составление почвенных карт областей, районов и областей территории Республики Узбекистан',
+    // task2: "Sho`rlangan tuproqlar xaritalarini tuzish",
+    // task3: "Sug'oriladigan va sug'orilmaydigan yerlarning tuproq sifatini baholash xaritalari",
+    // task4: "Sug'oriladigan yerlarning agrokimyoviy kartogrammalarini ishlab chiqish"
   },
 };
 
@@ -111,6 +126,11 @@ let alertTitle = document.getElementById("alert-title");
 let msg = document.getElementById("msg");
 let subscribe = document.getElementById("subscribe");
 let tahlil = document.getElementById("tahlil-title");
+// let taskTitle = document.getElementById("taskTitle");
+// let task1 = document.getElementById("task1");
+// let task2 = document.getElementById("task2");
+// let task3 = document.getElementById("task3");
+// let task4 = document.getElementById("task4");
 
 const til = localStorage.getItem("language");
 if (til === "eng") {
@@ -134,6 +154,11 @@ if (til === "eng") {
   msg.innerText = data.en.msg;
   subscribe.innerText = data.en.subscribe;
   tahlil.innerText = data.en.tahlilTitle;
+  taskTitle.innerText = data.en.taskTitle;
+  task1.innerText = data.en.task1;
+  task2.innerText = data.en.task2;
+  task3.innerText = data.en.task3;
+  task4.innerText = data.en.task4;
 } else if (til === "rus") {
   homeText.innerText = data.ru.homeText;
   ruleText.innerText = data.ru.ruleText;
@@ -155,6 +180,11 @@ if (til === "eng") {
   msg.innerText = data.ru.msg;
   subscribe.innerText = data.ru.subscribe;
   tahlil.innerText = data.ru.tahlilTitle;
+  // taskTitle.innerText = data.ru.taskTitle;
+  // task1.innerText = data.ru.task1;
+  // task2.innerText = data.ru.task2;
+  // task3.innerText = data.ru.task3;
+  // task4.innerText = data.ru.task4;
 } else if (til === "uzb") {
   homeText.innerText = data.uz.homeText;
   ruleText.innerText = data.uz.ruleText;
@@ -176,4 +206,9 @@ if (til === "eng") {
   msg.innerText = data.uz.msg;
   subscribe.innerText = data.uz.subscribe;
   tahlil.innerHTML = data.uz.tahlilTitle;
+  // taskTitle.innerText = data.uz.taskTitle;
+  // task1.innerText = data.uz.task1;
+  // task2.innerText = data.uz.task2;
+  // task3.innerText = data.uz.task3;
+  // task4.innerText = data.uz.task4;
 }

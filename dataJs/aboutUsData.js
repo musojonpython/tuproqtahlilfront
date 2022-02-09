@@ -84,3 +84,46 @@ function filterItem() {
   })
 }
 filterItem();
+
+
+  // korxona vazifalari
+
+  let taskTitle1 = document.querySelector('#taskTitle');
+  taskTitle1.innerHTML = `${lang === "uzb"
+  ? "Korxonaning asosiy vazifalari"
+  : lang === "eng"
+    ? "The main functions of the enterprise"
+    : "Oсновные функции предприятия"
+  }`
+
+  let task1 = document.querySelector('#task1');
+  task1.innerHTML = `${lang === "uzb"
+  ? "O‘zbekiston Respublikasi viloyatlari, tumanlari va hududlari tuproq xaritalarini tuzish"
+  : lang === "eng"
+    ? "Drawing up soil maps of regions, districts and regions territory of the Republic of Uzbekistan"
+    : "Составление почвенных карт областей, районов и областей территории Республики Узбекистан"
+  }`
+
+  let task2 = document.querySelector('#task2');
+  task2.innerHTML = `${lang === "uzb"
+  ? "Sho`rlangan tuproqlar xaritalarini tuzish"
+  : lang === "eng"
+    ? "Drawing up maps of saline soil"
+    : "Составление карт засоленных почв."
+  }`
+
+  let task3 = document.querySelector('#task3');
+  task3.innerHTML = `${lang === "uzb"
+  ? "Sug'oriladigan va sug'orilmaydigan yerlarning tuproq sifatini baholash xaritalari"
+  : lang === "eng"
+    ? "Maps of soil quality assessment of irrigated and non-irrigated lands"
+    : "Карты оценки качества почв орошаемых и неорошаемых земель"
+  }`
+
+  let task4 = document.querySelector('#task4');
+  task4.innerHTML = `${lang === "uzb"
+  ? "Sug'oriladigan yerlarning agrokimyoviy kartogrammalarini ishlab chiqish"
+  : lang === "eng"
+    ? "Development of agrochemical cartograms of irrigated lands"
+    : "Разработка агрохимических картограмм орошаемых земель"
+  }`
