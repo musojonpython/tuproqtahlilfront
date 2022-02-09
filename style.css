@@ -986,6 +986,12 @@ a {
     display: block;
     font-weight: 600;
     font-size: 16px;
+    font-weight: 400;
+}
+
+.small-box a small{
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .big-contact-form .form-control {
@@ -3268,3 +3274,4 @@ th {
         font-size: 27px !important;
     }
 }
+

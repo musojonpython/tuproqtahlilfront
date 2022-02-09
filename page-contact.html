@@ -78,14 +78,14 @@
             </div>
             <div class="col-md-6 col-sm-6 hidden-xs text-right">
               <div class="social">
-                <a class="youtube" href="#" data-tooltip="tooltip" data-placement="bottom" title="Youtube"><i
-                    class="fab fa-youtube"></i></a>
-                <a class="telegram" href="#" data-tooltip="tooltip" data-placement="bottom" title="Telegram"><i
-                    class="fab fa-telegram-plane"></i></a>
-                <a class="instagram" href="#" data-tooltip="tooltip" data-placement="bottom" title="Instagram"><i
-                    class="fab fa-instagram"></i></a>
-                <a class="facebook" href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i
-                    class="fa fa-facebook"></i></a>
+                <a class="youtube" href="https://youtube.com/channel/UCrONuSmZWvfdoHqh1Q-hfrg" data-tooltip="tooltip" data-placement="bottom" title="Youtube"><i
+                  class="fab fa-youtube"></i></a>
+              <a class="telegram" href="http://t.me/TSTM_DUK" data-tooltip="tooltip" data-placement="bottom" title="Telegram"><i
+                  class="fab fa-telegram-plane"></i></a>
+              <a class="instagram" href="https://www.instagram.com/tuproqsifattahlil_duk/" data-tooltip="tooltip" data-placement="bottom" title="Instagram"><i
+                  class="fab fa-instagram"></i></a>
+              <a class="facebook" href="facebook.com/tuproqsifattahlil" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i
+                  class="fa fa-facebook"></i></a>
               </div>
             </div>
           </div>
@@ -147,10 +147,10 @@
         <div class="row">
           <div class="col-md-12">
             <div class="tagline-message page-title text-center">
-              <h3 class="text-shadow">Bog'lanish</h3>
+              <h3 id="contact-title" class="text-shadow">Bog'lanish</h3>
               <ul class="breadcrumb">
                 <li><a href="index.html">Tuproq Bonitirovkasi</a></li>
-                <li class="active">Bog'lanish</li>
+                <li id="contact-title2" class="active">Bog'lanish</li>
               </ul>
             </div>
           </div>
@@ -165,16 +165,17 @@
     <section class="section gb nopadtop">
       <div class="container">
         <div class="boxed boxedp4">
-          <div id="map" class="wow slideInUp"></div>
+          <!-- <div id="map" class="wow slideInUp"></div> -->
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1060&amp;height=400&amp;hl=en&amp;q= 41.283320, 69.208860&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
 
           <div class="row contactv2 text-center">
             <div class="col-md-4">
               <div class="contact-card">
                 <div class="small-box">
                   <i class="fa flaticon-email wow fadeIn"></i>
-                  <h4>Contact us today</h4>
-                  <small>Phone: +(998-71) 278-50-994</small>
-                  <small>Fax: +(998-71) 278-50-76</small>
+                  <h4 id="contactUs">Contact us today</h4>
+                  <small>Phone: +(998-71) 278-50-99</small>
+                  <small>Phone: +(998-71) 278-50-76</small>
                   <p><a href="mail:soil-uz@mail.ru">soil-uz@mail.ru</a></p>
                 </div>
 
@@ -186,9 +187,9 @@
               <div class="contact-card">
                 <div class="small-box">
                   <i class="fa flaticon-map-with-position-marker wow fadeIn"></i>
-                  <h4>Visit Our Office</h4>
-                  <small>Manzil: 100097, Toshkent shahri, Chilonzor tumani,</small>
-                  <small> Cho’pon ota ko’chasi, 5A-uy</small>
+                  <h4 id="visit">Visit Our Office</h4>
+                  <small>100097, Toshkent shahri, Chilonzor tumani,</small>
+                  <small> Cho’pon ota ko’chasi, ц mavze</small>
                   <p><a href="#">View on Google Map</a></p>
                 </div>
               </div>
@@ -200,10 +201,12 @@
               <div class="contact-card">
                 <div class="small-box">
                   <i class="fa flaticon-share wow fadeIn"></i>
-                  <h4>Be Social</h4>
+                  <h4 id="besocial">Be Social</h4>
                   <a href="https://www.instagram.com/tuproqsifattahlil_duk/"> <small></small>Instagram: Tuproq Sifat
                     Tahlil DUK</small></a>
-                  <a href="facebook.com/tuproqsifattahlil"><small>Facebook: Tupro Sifat Tahlil DUK</small></a>
+                  <a href="facebook.com/tuproqsifattahlil"><small>Facebook: Tuproq Sifat Tahlil DUK</small></a>
+                  <a href="https://youtube.com/channel/UCrONuSmZWvfdoHqh1Q-hfrg"><small>Youtube: Tuproq Sifat Tahlil DUK</small></a>
+                  <a href="http://t.me/TSTM_DUK"><small>Telegram: Tuproq Sifat Tahlil DUK</small></a>
                 </div>
 
               </div> <!-- end small-box -->
@@ -214,11 +217,7 @@
 
           <div class="row">
             <div class="section-title text-center">
-              <h3>Contact Form</h3>
-              <p>
-                Maecenas sit amet tristique turpis. Quisque porttitor eros
-                quis leo pulvinar, at hendrerit sapien iaculis.
-              </p>
+              <h3 id="contactTitle">Contact Form</h3>
             </div>
             <!-- end title -->
             <form id="registerForm" class="big-contact-form" role="search">
@@ -229,7 +228,7 @@
               </div>
               <div class="col-md-6">
                 <textarea id="text" class="form-control" placeholder="Message goes here.."></textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="contactBtn" type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
             <!-- end col -->

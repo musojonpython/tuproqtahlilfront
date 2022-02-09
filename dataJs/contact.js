@@ -22,3 +22,59 @@ function Application(e) {
       console.log(err.response);
     });
 }
+
+let contacttitle = document.querySelector('#contact-title');
+contacttitle.innerHTML = `${lang === "uzb"
+? "Bog'lanish"
+: lang === "eng"
+  ? "Contact"
+  : "Контакт"
+}`
+
+let contacttitle2 = document.querySelector('#contact-title2');
+contacttitle2.innerHTML = `${lang === "uzb"
+? "Bog'lanish"
+: lang === "eng"
+  ? "Contact"
+  : "Контакт"
+}`
+
+let contactUs = document.querySelector('#contactUs');
+contactUs.innerHTML = `${lang === "uzb"
+? "Bugun biz bilan bog'laning"
+: lang === "eng"
+  ? "Contact us today"
+  : "Свяжитесь с нами сегодня"
+}`
+
+let visit = document.querySelector('#visit');
+visit.innerHTML = `${lang === "uzb"
+? "Bizning ofisimizga tashrif buyuring"
+: lang === "eng"
+  ? "Visit Our Office"
+  : "Посетите наш офис"
+}`
+
+let besocial = document.querySelector('#besocial');
+besocial.innerHTML = `${lang === "uzb"
+? "Ijtimoiy tarmoqlarimiz"
+: lang === "eng"
+  ? "Our social networks"
+  : "Наши социальные сети"
+}`
+
+let contactTitle = document.querySelector('#contactTitle');
+contactTitle.innerHTML = `${lang === "uzb"
+? "A'loqa"
+: lang === "eng"
+  ? "Contact"
+  : "Контакт"
+}`
+
+let contactBtn = document.querySelector('#contactBtn');
+contactBtn.innerHTML = `${lang === "uzb"
+? "Yuborish"
+: lang === "eng"
+  ? "Submit"
+  : "Представлять на рассмотрение"
+}`
