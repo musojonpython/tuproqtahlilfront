@@ -8,7 +8,6 @@ function getDocuments() {
     let docItem = response.data.results
       .map((data) => {
         let image = data.images[0].file;
-        console.log(data);
         return `
           <div class="col-md-4 text-left">
             <div class="caro-item card-up">

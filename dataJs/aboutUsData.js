@@ -5,6 +5,7 @@ const lang = localStorage.getItem("language");
 
 function setAboutImg() {
   axios(`${baseUrl}/api/v1/main/history/`).then((response) => {
+    console.log(response);
     let aboutUsData = response.data.results[0];
     let aboutText = document.querySelector("#aboutText");
     let content = `
@@ -71,14 +72,15 @@ filterMenu();
 function filterItem() {
   let filterItem = document.querySelector(".filter-item");
   axios(`${baseUrl}/api/v1/main/gallery/`).then((response) => {
+    console.log(response);
     let content = response.data.results
-      .map((data) => {
-        return `
-        <li data-item="Title1"><img src=${data.image.file} alt="image"></li>
-      `;
-      })
-      .join("");
+    .map((data) => {
+      return `
+      <li data-item="Title1"><img src=${data.image.file} alt="image"></li>
+    `;
+    })
+    .join("");
     filterItem.innerHTML = content;
-  });
+  })
 }
 filterItem();

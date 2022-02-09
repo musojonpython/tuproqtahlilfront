@@ -9,20 +9,22 @@ $(document).ready(function () {
 function getAboutData() {
   axios(`${baseUrl}/api/v1/main/history/`).then((response) => {
     const historyContent = document.querySelector("#historyContent");
+    console.log(response);
     let newsItem = response.data.results
       .map(function (data) {
         let img = data.images[0];
         return `
-           <div class="col-md-4 hidden-sm hidden-xs">
-              <div id="imageAbout" class="custom-module">
+           <div class="col-md-5 hidden-sm hidden-xs">
+              <div id="imageAbout" class="custom-module" style="width="100%"">
                 <img
                   src=${img.file}
                   alt="About image"
                   class="img-responsive wow slideInLeft"
+                  width="100%"
                 />
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
               <div class="custom-module p40l">
                 <h2 id="aboutTitle" class="title">
                 ${lang === "uzb"
@@ -56,6 +58,7 @@ function getAboutData() {
     historyContent.innerHTML = newsItem;
   });
 }
+
 function setCarouselItem(item) {
   $(item).owlCarousel({
     loop: true,

@@ -6,6 +6,7 @@ function getServiceDetail() {
   const lang = window.localStorage.getItem("language");
   axios(`${baseUrl}/api/v1/main/service/${id}`)
     .then((response) => {
+      console.log(response);
       let currentService = `
                     <div class="news-item">
                           <div class="title">

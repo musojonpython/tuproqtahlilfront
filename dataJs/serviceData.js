@@ -1,5 +1,17 @@
 import { baseUrl } from "./baseUrl.js";
 const lang = localStorage.getItem("language");
+
+
+const currentService = document.querySelector("#event-boxes");
+currentService.addEventListener("click", getNewsDetail);
+function getNewsDetail(e) {
+  if (e.target.classList.contains("setID")) {
+    console.log(e.target.parentElement.dataset);
+    const id = e.target.parentElement.dataset.id;
+    localStorage.setItem("servicetID", id);
+  }
+}
+
 function getServiceData() {
   axios(`${baseUrl}/api/v1/main/service/`).then((response) => {
     let eventBoxes = document.getElementById("event-boxes");
@@ -15,7 +27,7 @@ function getServiceData() {
                               alt=""
                               class="img-responsive"
                           />
-                          <div class="magnifier setID">
+                          <div class="magnifier setID" data-id=${data.id}>
                               <a href="service-detail.html" title=""><i class="flaticon-add"></i></a>
                           </div>
                       </div>
@@ -23,11 +35,11 @@ function getServiceData() {
                       <h4 data-id=${data.id}>
                           <a href="service-detail.html" title="" class="setID">
                             ${lang === "uzb"
-            ? data.name_uz
-            : lang === "eng"
-              ? data.name_en
-              : data.name_ru
-          }
+                              ? data.name_uz
+                              : lang === "eng"
+                                ? data.name_en
+                                : data.name_ru
+                            }
                           </a>
                       </h4>
                       <p>
@@ -49,14 +61,6 @@ function getServiceData() {
 }
 getServiceData();
 
-const currentService = document.querySelector("#event-boxes");
-currentService.addEventListener("click", getNewsDetail);
-function getNewsDetail(e) {
-  if (e.target.classList.contains("setID")) {
-    const id = e.target.parentElement.dataset.id;
-    localStorage.setItem("servicetID", id);
-  }
-}
 function getTeamData() {
   axios(`${baseUrl}/api/v1/main/employee/`).then((response) => {
     let teamBox = document.getElementById("team");
