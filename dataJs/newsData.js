@@ -120,14 +120,6 @@ newsTitle.innerHTML = `${lang === "uzb"
   : "Новости"
 }`
 
-let newsTitle2 = document.querySelector('#newsTitle2');
-newsTitle2.innerHTML = `${lang === "uzb"
-? "YANGILIKLAR"
-: lang === "eng"
-  ? "NEWS"
-  : "Новости"
-}`
-
 let lastnews = document.querySelector('#lastnews');
 lastnews.innerHTML = `${lang === "uzb"
 ? "So'ngi yangiliklar"
@@ -143,3 +135,45 @@ moreRead.innerHTML = `${lang === "uzb"
   ? "most read"
   : "Популярное"
 }`
+
+
+function getMostReadData() {
+  axios(`${baseUrl}/api/v1/main/news/`).then((response) => {
+    const newsBox = document.querySelector("#postWidget");
+    let newsItem = response.data.results
+      .sort((a, b) => b.view_count - a.view_count).slice(0,
+        4).map(function (data) {
+        let img = data.images[0];
+        const lang = window.localStorage.getItem("language");
+        console.log(data);
+        return`
+            <div data-id=${data.id} class="media">
+              <img
+              src=${img === undefined ? "" : img.file}
+              alt=${img === undefined ? "" : img.name}
+                class="img-responsive alignleft img-rounded"
+              />
+              <div class="media-body">
+                <h5 class="mt-0">
+                  <a href="#"
+                    >${
+                      lang === "uzb"
+                        ? data.short_description_uz
+                        : lang === "eng"
+                        ? data.short_description_en
+                        : data.short_description_ru
+                    }</a
+                  >
+                </h5>
+              <!-- end blog-meta -->
+            </div>
+          </div>
+
+        `
+      })
+      .join("");
+      console.log(newsItem);
+    newsBox.innerHTML = newsItem;
+  });
+}
+getMostReadData()

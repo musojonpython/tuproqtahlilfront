@@ -127,3 +127,13 @@ filterItem();
     ? "Development of agrochemical cartograms of irrigated lands"
     : "Разработка агрохимических картограмм орошаемых земель"
   }`
+
+
+
+  let ab = document.querySelector('.about-uss');
+  ab.innerHTML = `${lang === "uzb"
+  ? "Biz haqimizda"
+  : lang === "eng"
+    ? "About Us"
+    : "О нас"
+  }`

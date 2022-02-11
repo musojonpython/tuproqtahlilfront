@@ -3275,3 +3275,24 @@ th {
     }
 }
 
+/* Company */
+
+.company-section{
+    background-color: #FFFF01;
+}
+
+.company{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.link a:hover{
+    color: crimson;
+}
