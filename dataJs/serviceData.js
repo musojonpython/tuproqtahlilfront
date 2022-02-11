@@ -120,7 +120,7 @@ const leaderTitle = document.querySelector("#leader-title");
 leaderTitle.innerHTML = `${lang === "uzb"
   ? "Rahbariyat"
   : lang === "eng"
-    ? "Leadership"
+    ? "Management"
     : "Руководство"
   }`
 
