@@ -61,3 +61,11 @@ function getLabDetail(e) {
     localStorage.setItem("staticID", id);
   }
 }
+
+const serviceRule1 = document.querySelector('#static-lab');
+serviceRule1.innerHTML = `${lang === "uzb"
+? "Statik Laboratoriya"
+: lang === "eng"
+  ? "Static laboratory"
+  : "СТАТИЧЕСКАЯ ЛАБОРАТОРИЯ"
+}`
