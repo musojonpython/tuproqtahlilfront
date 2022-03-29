@@ -132,10 +132,10 @@ leaderTitle.innerHTML = `${lang === "uzb"
     : "Mы предлагаем лучшие и качественные услуги"
   }`
 
-  const offer = document.querySelector("#offer");
-  offer.innerHTML = `${lang === "uzb"
-  ? "Xizmat buyurtma qilish"
-  : lang === "eng"
-    ? "Order service"
-    : "Заказать услугу"
-  }`
+  // const offer = document.querySelector("#offer");
+  // offer.innerHTML = `${lang === "uzb"
+  // ? "Xizmat buyurtma qilish"
+  // : lang === "eng"
+  //   ? "Order service"
+  //   : "Заказать услугу"
+  // }`

@@ -3,11 +3,11 @@ const data = {
     homeText: "TUPROQ TARKIBI VA REPOZITORIYSI, SIFATI TAHLIL MARKAZI",
     ruleText:
       "Qishloq xo‘jaligi sohasini boshqarish tizimini isloh qilish, er va suv  resurslaridan oqilona foydalanish borasidagi ilg‘or    texnologiyalarni joriy etish, oziq-ovqat xavfsizligini ta’minlash  eng muhim vazifamizdir",
-    moreRead: "Ko'proq o'qish",
+    // moreRead: "Ko'proq o'qish",
     moreSee: "Ko'proq ko'rish ",
     aboutTitle: " Biz haqimizda",
     serviceTitle: "Xizmatlar",
-    serviceLink: "Xizmatlar",
+    // serviceLink: "Xizmatlar",
     newsTitle: "So'ngi Yangiliklar",
     newsText:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. Debitis, veritatis  voluptatibus ad illum dolor vel nesciunt atque numquam.Autem ipsam esse officia facilis nisi suscipit quisquam natus",
@@ -37,11 +37,11 @@ const data = {
     homeText: "SOIL COMPOSITION AND REPOSITORY, QUALITY ANALYSIS CENTER",
     ruleText:
       "Our most important task is to reform the management system of the agricultural sector, the introduction of advanced technologies for the rational use of land and water resources, food security",
-    moreRead: "Read More",
+    // moreRead: "Read More",
     moreSee: "See more",
     aboutTitle: "About us",
     serviceTitle: "Services",
-    serviceLink: "Services",
+    // serviceLink: "Services",
     newsTitle: "Latest News",
     newsText:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. natus ",
@@ -71,7 +71,7 @@ const data = {
     homeText: "Аналитический центр качества, состава и репозитории почв",
     ruleText:
       "Наша важнейшая задача - реформирование системы управления аграрным сектором, внедрение передовых технологий для рационального использования земельных и водных ресурсов, обеспечения продовольственной безопасности",
-    moreRead: "Подробнее",
+    // moreRead: "Подробнее",
     moreSee: "узнать больше",
     подробнееСм: "Узнать больше",
     aboutTitle: "О нас",
@@ -136,9 +136,9 @@ const til = localStorage.getItem("language");
 if (til === "eng") {
   homeText.innerText = data.en.homeText;
   ruleText.innerText = data.en.ruleText;
-  moreRead.innerText = data.en.moreRead;
+  // moreRead.innerText = data.en.moreRead;
   moreSee.innerText = data.en.moreSee;
-  serviceLink.innerText = data.en.serviceLink;
+  // serviceLink.innerText = data.en.serviceLink;
   newsTitle.innerText = data.en.newsTitle;
   newsText.innerText = data.en.newsText;
   allNews.innerText = data.en.allNews;
@@ -162,9 +162,9 @@ if (til === "eng") {
 } else if (til === "rus") {
   homeText.innerText = data.ru.homeText;
   ruleText.innerText = data.ru.ruleText;
-  moreRead.innerText = data.ru.moreRead;
+  // moreRead.innerText = data.ru.moreRead;
   moreSee.innerText = data.ru.moreSee;
-  serviceLink.innerText = data.ru.serviceLink;
+  // serviceLink.innerText = data.ru.serviceLink;
   newsTitle.innerText = data.ru.newsTitle;
   newsText.innerText = data.ru.newsText;
   allNews.innerText = data.ru.allNews;
@@ -188,9 +188,9 @@ if (til === "eng") {
 } else if (til === "uzb") {
   homeText.innerText = data.uz.homeText;
   ruleText.innerText = data.uz.ruleText;
-  moreRead.innerText = data.uz.moreRead;
+  // moreRead.innerText = data.uz.moreRead;
   moreSee.innerText = data.uz.moreSee;
-  serviceLink.innerText = "Xizmatlar";
+  // serviceLink.innerText = "Xizmatlar";
   newsTitle.innerText = data.uz.newsTitle;
   newsText.innerText = data.uz.newsText;
   allNews.innerText = data.uz.allNews;
