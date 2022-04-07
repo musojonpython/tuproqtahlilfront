@@ -3060,11 +3060,13 @@ img {
     background-size: cover;
     text-align: center;
     padding-top: 150px;
+    width: 100%;
     padding-bottom: 50px;
 }
 
 .open-container {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -3154,6 +3156,7 @@ th {
 /* chart */
 
 .chart-section {
+    width: 100%;
     padding-top: 50px;
 }
 
@@ -3221,6 +3224,7 @@ th {
 }
 
 .tasks-section{
+    width: 100%;
     padding: 50px 0;
 }
 
@@ -3234,6 +3238,7 @@ th {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -3279,6 +3284,7 @@ th {
 /* Company */
 
 .company-section{
+    width: 100%;
     background-color: #FFFF01;
 }
 
