@@ -261,3 +261,11 @@ nor4T.innerHTML = `${lang === "uzb"
     ? "4.  \"Atrof-muhitning ifloslanish darajasini baholash tizimini yanada takomillashtirish to‘g‘risida\" (2021-yil 3-iyun, VMQ-510-son)"
     : "4. O дальнейшем совершенствовании системы оценки уровня загрязнения окружающей среды (3 июня 2021 г.№ 343)"
   }`
+
+  let norTitle = document.querySelector('#nor-title');
+  norTitle.innerHTML = `${lang === "uzb"
+  ? "Normativ huquqiy hujjatlar"
+  : lang === "eng"
+    ? "Regulatory legal acts"
+    : "Нормативно-правовые акты"
+  }`;
