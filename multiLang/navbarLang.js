@@ -21,7 +21,7 @@ options.forEach(function (data) {
 const languages = {
   uz: {
     about: "Biz Haqimizda",
-    document: "Dokument",
+    document: "Hujjatlar",
     service: "Xizmatlar",
     media: "Mediya",
     labaratory: "Labaratoriya",
@@ -32,7 +32,7 @@ const languages = {
   },
   en: {
     about: "About",
-    document: "Document",
+    document: "Documents",
     service: "Service",
     media: "Media",
     labaratory: "Labaratory",
@@ -96,3 +96,5 @@ if (language === "eng") {
   ope.innerText = `${languages.uz.opendata}`;
   byu.innerText = `${languages.uz.byudjet}`;
 }
+
+

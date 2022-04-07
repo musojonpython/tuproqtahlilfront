@@ -21,11 +21,11 @@ function getDocuments() {
                 <div class="course-details">
                   <h4>
                     <a href="#" title=""> ${lang === "uzb"
-                      ? data.name_uz
-                      : lang === "eng"
-                        ? data.name_en
-                        : data.name_ru
-                    }</a>
+            ? data.name_uz
+            : lang === "eng"
+              ? data.name_en
+              : data.name_ru
+          }</a>
                   </h4>
                 </div>
               </div>
@@ -38,23 +38,23 @@ function getDocuments() {
   });
 }
 
-let hujjat= document.querySelector('.doc');
+let hujjat = document.querySelector('.doc');
 hujjat.innerHTML = `${lang === "uzb"
-? "Hujjatlar"
-: lang === "eng"
-  ? "Documents"
-  : "Документы"
-}`
+  ? "Hujjatlar"
+  : lang === "eng"
+    ? "Documents"
+    : "Документы"
+  }`
 
 // History
 
 let history = document.querySelector('#history-title');
 history.innerHTML = `${lang === "uzb"
-? "KORXONA TASHKIL TOPISHINING TASHKILIY HUQUQIY ASOSLARI"
-: lang === "eng"
-  ? "Basic principles of organizational structure of the enterprise"
-  : "Основные принципы организационной структуры предприятия"
-}`
+  ? "KORXONA TASHKIL TOPISHINING TASHKILIY HUQUQIY ASOSLARI"
+  : lang === "eng"
+    ? "Basic principles of organizational structure of the enterprise"
+    : "Основные принципы организационной структуры предприятия"
+  }`
 
 
 const historyData = [
@@ -166,19 +166,19 @@ function getHistoryBox() {
           <div class="col-sm-10">
             <div id="item-titleH2" class="title">
               ${lang === "uzb"
-                ? data.date.uz
-                : lang === "eng"
-                  ? data.date.en
-                  : data.date.ru
-              }
+        ? data.date.uz
+        : lang === "eng"
+          ? data.date.en
+          : data.date.ru
+      }
             </div>
             <div id="item-textH2" class="text">
               ${lang === "uzb"
-                ? data.text.uz
-                : lang === "eng"
-                  ? data.text.en
-                  : data.text.ru
-              }
+        ? data.text.uz
+        : lang === "eng"
+          ? data.text.en
+          : data.text.ru
+      }
             </div>
           </div>
         </div>
@@ -189,4 +189,75 @@ function getHistoryBox() {
   boxx.innerHTML = box
 }
 
-getHistoryBox()
+getHistoryBox();
+
+const nor1 = document.querySelector('#nor1');
+const nor1T = document.querySelector('#nor1T');
+
+nor1.href = `${lang === "uzb"
+  ? "https://lex.uz/docs/-4985026"
+  : lang === "eng"
+    ? "https://lex.uz/docs/-4985026"
+    : "https://lex.uz/docs/4985030"
+  }`;
+
+nor1T.innerHTML = `${lang === "uzb"
+  ? "1. \"Yer hisobi va davlat kadastrlarini yuritish tizimini tubdan takomillashtirish chora-tadbirlari to'g'risida\" (2020-yil 7-sentabr, PQ-6061-son)"
+  : lang === "eng"
+    ? "1. \"Yer hisobi va davlat kadastrlarini yuritish tizimini tubdan takomillashtirish chora-tadbirlari to'g'risida\" (2020-yil 7-sentabr, PQ-6061-son)"
+    : "1. O мерах по кардинальному совершенствованию системы ведения учета земли и государственных кадастров (7 сентября 2020 г.№ УП-6061)"
+  }`
+
+
+const nor2 = document.querySelector('#nor2');
+const nor2T = document.querySelector('#nor2T');
+
+nor2.href = `${lang === "uzb"
+  ? "https://lex.uz/docs/-4242004"
+  : lang === "eng"
+    ? "https://lex.uz/docs/-4242004"
+    : "https://lex.uz/docs/4242012"
+  }`;
+
+nor2T.innerHTML = `${lang === "uzb"
+  ? "2.  \"Meva-sabzavotchilik sohasida qishloq xo‘jaligi kooperatsiyasini rivojlantirish chora-tadbirlari to‘g‘risida\" (2019-yil 14-mart, PQ-4239-son)."
+  : lang === "eng"
+    ? "2.  \"Meva-sabzavotchilik sohasida qishloq xo‘jaligi kooperatsiyasini rivojlantirish chora-tadbirlari to‘g‘risida\" (2019-yil 14-mart, PQ-4239-son)."
+    : "2. O мерах по развитию сельскохозяйственной кооперации в плодоовощной отрасли (14 марта 2019 г.№ ПП-4239)"
+  }`
+
+
+const nor3 = document.querySelector('#nor3');
+const nor3T = document.querySelector('#nor3T');
+
+nor3.href = `${lang === "uzb"
+  ? "https://lex.uz/docs/-4380635"
+  : lang === "eng"
+    ? "https://lex.uz/docs/-4380635"
+    : "https://lex.uz/docs/4380637"
+  }`;
+
+nor3T.innerHTML = `${lang === "uzb"
+  ? "3.  \"Qishloq xo‘jaligida tuproqning agrokimyoviy tahlil tizimini takomillashtirish, ekin yerlarida tuproqning unumdorligini oshirish chora-tadbirlari to‘g‘risida\" (2019-yil 18-iyun, VMQ-510-son)"
+  : lang === "eng"
+    ? "3.  \"Qishloq xo‘jaligida tuproqning agrokimyoviy tahlil tizimini takomillashtirish, ekin yerlarida tuproqning unumdorligini oshirish chora-tadbirlari to‘g‘risida\" (2019-yil 18-iyun, VMQ-510-son)"
+    : "3 O мерах по совершенствованию системы агрохимического анализа почв в сельском хозяйстве, повышению плодородия почв посевных земель (18 июня 2019 г.№ 510)"
+  }`
+
+
+const nor4 = document.querySelector('#nor4');
+const nor4T = document.querySelector('#nor4T');
+
+nor4.href = `${lang === "uzb"
+  ? "https://lex.uz/docs/-5442999"
+  : lang === "eng"
+    ? "https://lex.uz/docs/-5442999"
+    : "https://lex.uz/docs/5446445"
+  }`;
+
+nor4T.innerHTML = `${lang === "uzb"
+  ? "4.  \"Atrof-muhitning ifloslanish darajasini baholash tizimini yanada takomillashtirish to‘g‘risida\" (2021-yil 3-iyun, VMQ-510-son)"
+  : lang === "eng"
+    ? "4.  \"Atrof-muhitning ifloslanish darajasini baholash tizimini yanada takomillashtirish to‘g‘risida\" (2021-yil 3-iyun, VMQ-510-son)"
+    : "4. O дальнейшем совершенствовании системы оценки уровня загрязнения окружающей среды (3 июня 2021 г.№ 343)"
+  }`

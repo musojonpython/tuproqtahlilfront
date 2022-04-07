@@ -3066,6 +3066,7 @@ img {
 .open-container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 50px 0;
 }
 
 .focus {
@@ -3295,4 +3296,14 @@ th {
 
 .link a:hover{
     color: crimson;
+}
+
+
+.norma{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.not-title{
+    margin-bottom: 20px;
 }
