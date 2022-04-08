@@ -62,6 +62,7 @@ const lab = document.getElementById("lab");
 const news = document.getElementById("new");
 const add = document.getElementById("add");
 const ope = document.getElementById("ope");
+const ope1 = document.getElementById("ope1");
 const byu = document.getElementById("byu");
 
 const language = localStorage.getItem("language");
@@ -74,6 +75,7 @@ if (language === "eng") {
   news.innerText = `${languages.en.news}`;
   add.innerText = `${languages.en.address}`;
   ope.innerText = `${languages.en.opendata}`;
+  ope1.innerText = `${languages.en.opendata}`;
   byu.innerText = `${languages.en.byudjet}`;
 } else if (language === "rus") {
   about.innerText = `${languages.ru.about}`;
@@ -84,6 +86,7 @@ if (language === "eng") {
   news.innerText = `${languages.ru.news}`;
   add.innerText = `${languages.ru.address}`;
   ope.innerText = `${languages.ru.opendata}`;
+  ope1.innerText = `${languages.ru.opendata}`;
   byu.innerText = `${languages.ru.byudjet}`;
 } else if (language === "uzb") {
   about.innerText = `${languages.uz.about}`;
@@ -94,6 +97,7 @@ if (language === "eng") {
   news.innerText = `${languages.uz.news}`;
   add.innerText = `${languages.uz.address}`;
   ope.innerText = `${languages.uz.opendata}`;
+  ope1.innerText = `${languages.uz.opendata}`;
   byu.innerText = `${languages.uz.byudjet}`;
 }
 
