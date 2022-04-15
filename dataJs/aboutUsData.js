@@ -128,8 +128,6 @@ filterItem();
     : "Разработка агрохимических картограмм орошаемых земель"
   }`
 
-
-
   let ab = document.querySelector('.about-uss');
   ab.innerHTML = `${lang === "uzb"
   ? "Biz haqimizda"

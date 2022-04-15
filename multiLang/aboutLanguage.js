@@ -5,12 +5,13 @@ const data = {
       "Qishloq xo‘jaligi sohasini boshqarish tizimini isloh qilish, er va suv  resurslaridan oqilona foydalanish borasidagi ilg‘or    texnologiyalarni joriy etish, oziq-ovqat xavfsizligini ta’minlash  eng muhim vazifamizdir",
     // moreRead: "Ko'proq o'qish",
     moreSee: "Ko'proq ko'rish ",
+    // video: "Video",
     aboutTitle: " Biz haqimizda",
     serviceTitle: "Xizmatlar",
     // serviceLink: "Xizmatlar",
     newsTitle: "So'ngi Yangiliklar",
     newsText:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. Debitis, veritatis  voluptatibus ad illum dolor vel nesciunt atque numquam.Autem ipsam esse officia facilis nisi suscipit quisquam natus",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. Debitis, veritatis  voluptatibus ad illum dolor vel nesciunt atque numquam.Autem ipsam esse officia facilis nisi suscipit quisquam natus",
     allNews: "Barcha yangiliklar",
     serviceRule: "Biz sizga eng yaxshi va sifatli xizmatlarni  taklif etamiz!",
     expertTitle: "Halqaro ekspertlar",
@@ -38,6 +39,7 @@ const data = {
     ruleText:
       "Our most important task is to reform the management system of the agricultural sector, the introduction of advanced technologies for the rational use of land and water resources, food security",
     // moreRead: "Read More",
+    // video: "Video",
     moreSee: "See more",
     aboutTitle: "About us",
     serviceTitle: "Services",
@@ -72,6 +74,7 @@ const data = {
     ruleText:
       "Наша важнейшая задача - реформирование системы управления аграрным сектором, внедрение передовых технологий для рационального использования земельных и водных ресурсов, обеспечения продовольственной безопасности",
     // moreRead: "Подробнее",
+    // video: "Bидео",
     moreSee: "узнать больше",
     подробнееСм: "Узнать больше",
     aboutTitle: "О нас",
@@ -126,6 +129,7 @@ let alertTitle = document.getElementById("alert-title");
 let msg = document.getElementById("msg");
 let subscribe = document.getElementById("subscribe");
 let tahlil = document.getElementById("tahlil-title");
+// let video = document.getElementById("video");
 // let taskTitle = document.getElementById("taskTitle");
 // let task1 = document.getElementById("task1");
 // let task2 = document.getElementById("task2");
@@ -155,10 +159,11 @@ if (til === "eng") {
   subscribe.innerText = data.en.subscribe;
   tahlil.innerText = data.en.tahlilTitle;
   taskTitle.innerText = data.en.taskTitle;
-  task1.innerText = data.en.task1;
-  task2.innerText = data.en.task2;
-  task3.innerText = data.en.task3;
-  task4.innerText = data.en.task4;
+  // task1.innerText = data.en.task1;
+  // task2.innerText = data.en.task2;
+  // task3.innerText = data.en.task3;
+  // task4.innerText = data.en.task4;
+  // video.innerText = data.en.video;
 } else if (til === "rus") {
   homeText.innerText = data.ru.homeText;
   ruleText.innerText = data.ru.ruleText;
@@ -180,6 +185,7 @@ if (til === "eng") {
   msg.innerText = data.ru.msg;
   subscribe.innerText = data.ru.subscribe;
   tahlil.innerText = data.ru.tahlilTitle;
+  // video.innerText = data.ru.video;
   // taskTitle.innerText = data.ru.taskTitle;
   // task1.innerText = data.ru.task1;
   // task2.innerText = data.ru.task2;
@@ -206,9 +212,12 @@ if (til === "eng") {
   msg.innerText = data.uz.msg;
   subscribe.innerText = data.uz.subscribe;
   tahlil.innerHTML = data.uz.tahlilTitle;
+  // video.innerHTML = data.uz.video;
   // taskTitle.innerText = data.uz.taskTitle;
   // task1.innerText = data.uz.task1;
   // task2.innerText = data.uz.task2;
   // task3.innerText = data.uz.task3;
   // task4.innerText = data.uz.task4;
 }
+
+

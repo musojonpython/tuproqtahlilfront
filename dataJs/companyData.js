@@ -20,31 +20,28 @@ const companyData = [
 function getCompanyData() {
     const companyBox = document.querySelector('#company-box');
     let item = companyData.map(data => {
-        return`
+        return `
             <div class="company">
                 <div class="phone-number">
-                    ${
-                        data.phone_number
-                    }
+                    ${data.phone_number
+            }
                 </div>
                 <div class="made">
-                    ${
-                        lang === "uzb"
-                        ? data.made_by.uz
-                        : lang === "eng"
-                            ? data.made_by.en
-                            : data.made_by.ru
-                    }
+                    ${lang === "uzb"
+                ? data.made_by.uz
+                : lang === "eng"
+                    ? data.made_by.en
+                    : data.made_by.ru
+            }
                 </div>
                 <div class="link">
                     <a href="#">
-                    ${
-                        lang === "uzb"
-                        ? data.link.uz
-                        : lang === "eng"
-                            ? data.link.en
-                            : data.link.ru
-                    }
+                    ${lang === "uzb"
+                ? data.link.uz
+                : lang === "eng"
+                    ? data.link.en
+                    : data.link.ru
+            }
                     </a>
                 </div>
             </div>
@@ -54,3 +51,35 @@ function getCompanyData() {
 }
 
 getCompanyData()
+
+const video = document.querySelector('#video');
+video.innerHTML = `${lang === "uzb"
+    ? "Video"
+    : lang === "eng"
+        ? "Video"
+        : "Bидео"
+    }`
+
+const video1 = document.querySelector('#video1');
+video1.innerHTML = `${lang === "uzb"
+    ? "Video"
+    : lang === "eng"
+        ? "Video"
+        : "Bидео"
+    }`
+
+const photo = document.querySelector('#photo');
+photo.innerHTML = `${lang === "uzb"
+    ? "Rasm"
+    : lang === "eng"
+        ? "Photo"
+        : "Фото"
+    }`
+
+const photo1 = document.querySelector('#photo1');
+photo1.innerHTML = `${lang === "uzb"
+    ? "PHOTO GALLERY"
+    : lang === "eng"
+        ? "PHOTO GALLERY"
+        : "ФОТОГАЛЕРЕЯ"
+    }`
