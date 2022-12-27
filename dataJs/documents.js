@@ -150,6 +150,19 @@ const historyData = [
       en: "According to the Decree of the President of the Republic of Uzbekistan on September 7, 2020 PD-4819 organization was incorporated to the structure of the Ministry of Agriculture of the Republic of Uzbekistan."
     }
   },
+  {
+    id: 8,
+    date: {
+      uz: "25 Dekabr, 2022 yil",
+      ru: "25 Декабрь 2022 года",
+      en: "On december 25, 2022"
+    },
+    text: {
+      uz: "Murojaat hamda shikoyatlar uchun",
+      ru: "Анализ притензий ",
+      en: "Claim form"
+    }
+  },
 ]
 
 
@@ -260,6 +273,32 @@ nor4T.innerHTML = `${lang === "uzb"
   : lang === "eng"
     ? "4.  \"Atrof-muhitning ifloslanish darajasini baholash tizimini yanada takomillashtirish to‘g‘risida\" (2021-yil 3-iyun, VMQ-510-son)"
     : "4. O дальнейшем совершенствовании системы оценки уровня загрязнения окружающей среды (3 июня 2021 г.№ 343)"
+  }`
+
+  let norTitle = document.querySelector('#nor-title');
+  norTitle.innerHTML = `${lang === "uzb"
+  ? "Normativ huquqiy hujjatlar"
+  : lang === "eng"
+    ? "Regulatory legal acts"
+    : "Нормативно-правовые акты"
+  }`;
+
+  
+const nor5 = document.querySelector('#nor5');
+const nor5T = document.querySelector('#nor5T');
+
+nor5.href = `${lang === "uzb"
+  ? "https://lex.uz/docs/-5442999"
+  : lang === "eng"
+    ? "https://lex.uz/docs/-5442999"
+    : "https://lex.uz/docs/5446445"
+  }`;
+
+nor5T.innerHTML = `${lang === "uzb"
+  ? "1.  \"Murojaat hamda shikoyatlar uchun\" (2022-yil 25-dekabr)"
+  : lang === "eng"
+    ? "1.  \"Claim form\" (2022-yil 25-dekabr)"
+    : "1. Анализ притензий  (25 Декабрь 2022 г.)"
   }`
 
   let norTitle = document.querySelector('#nor-title');
