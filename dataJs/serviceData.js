@@ -44,11 +44,11 @@ function getServiceData() {
                       </h4>
                       <p>
                         ${lang === "uzb"
-            ? data.about_uz.slice(0, 120) + "..."
-            : lang === "eng"
-              ? data.about_en.slice(0, 120) + "..."
-              : data.about_ru.slice(0, 120) + "..."
-          }
+                          ? data.about_uz.slice(0, 120) + "..."
+                          : lang === "eng"
+                            ? data.about_en.slice(0, 120) + "..."
+                            : data.about_ru.slice(0, 120) + "..."
+                        }
                       </p>
                       </div>
                   </div>
@@ -132,10 +132,4 @@ leaderTitle.innerHTML = `${lang === "uzb"
     : "Mы предлагаем лучшие и качественные услуги"
   }`
 
-  // const offer = document.querySelector("#offer");
-  // offer.innerHTML = `${lang === "uzb"
-  // ? "Xizmat buyurtma qilish"
-  // : lang === "eng"
-  //   ? "Order service"
-  //   : "Заказать услугу"
-  // }`
+  

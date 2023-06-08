@@ -9,7 +9,6 @@ $(document).ready(function () {
 function getAboutData() {
   axios(`${baseUrl}/api/v1/main/history/`).then((response) => {
     const historyContent = document.querySelector("#historyContent");
-    console.log(response);
     let newsItem = response.data.results
       .map(function (data) {
         let img = data.images[0];

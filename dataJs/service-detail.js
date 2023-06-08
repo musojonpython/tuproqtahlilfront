@@ -8,41 +8,41 @@ function getServiceDetail() {
     .then((response) => {
       console.log(response);
       let currentService = `
-                    <div class="news-item">
-                          <div class="title">
-                          ${
-                            lang === "uzb"
-                              ? response.data.name_uz
-                              : lang === "eng"
-                              ? response.data.name_en
-                              : response.data.name_ru
-                          }
-                          </div>
-                          <div class="media-box">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div id="aboutCarousel" class="owl-carousel">
-                                        ${response.data.images
-                                          .map((data) => {
-                                            return `
-                                                    <img src=${data.file} alt="About image"/>
-                                                    `;
-                                          })
-                                          .join("")}
-                                       </div>
-                                     </div>
-                                </div>
-                          </div>
-                          <div class="description">
-                                  ${
-                                    lang === "uzb"
-                                      ? response.data.about_uz
-                                      : lang === "eng"
-                                      ? response.data.about_en
-                                      : response.data.about_ru
-                                  }
-                          </div>
-                </div>`;
+          <div class="news-item">
+                <div class="title">
+                ${
+                  lang === "uzb"
+                    ? response.data.name_uz
+                    : lang === "eng"
+                    ? response.data.name_en
+                    : response.data.name_ru
+                }
+                </div>
+                <div class="media-box">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div id="aboutCarousel" class="owl-carousel">
+                              ${response.data.images
+                                .map((data) => {
+                                  return `
+                                    <img src=${data.file} alt="About image"/>
+                                      `;
+                                })
+                                .join("")}
+                              </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="description">
+                    ${
+                      lang === "uzb"
+                        ? response.data.about_uz
+                        : lang === "eng"
+                        ? response.data.about_en
+                        : response.data.about_ru
+                    }
+                </div>
+            </div>`;
       serviceDetail.innerHTML = currentService;
     })
     .catch((err) => {

@@ -6,7 +6,6 @@ function getDocumentsData() {
         const newsBox = document.querySelector("#tahlilTurlari");
         let newsItem = response.data.results
             .map(function (data) {
-                // let img = data.images[0];
                 const lang = window.localStorage.getItem("language");
                 return `
                     <div class="col-sm-6 col-md-4">

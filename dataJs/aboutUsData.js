@@ -5,13 +5,12 @@ const lang = localStorage.getItem("language");
 
 function setAboutImg() {
   axios(`${baseUrl}/api/v1/main/history/`).then((response) => {
-    console.log(response);
     let aboutUsData = response.data.results[0];
     let aboutText = document.querySelector("#aboutText");
     let content = `
         <div class="row">
            <div class="col-md-12">
-                <div id="aboutCarousel" class="owl-carousel" 
+                <div id="aboutCarousel" class="owl-carousel"
                 ${aboutUsData.images.map((data) => {
       return `
                       <img src=${data.file} alt="About image"/>
